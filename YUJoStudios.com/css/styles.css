@@ -1,0 +1,536 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+  background-color: black;
+}
+
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.50)),url(ha.gif);
+  background-size: cover;
+  background-position: center;
+}
+
+.logo{
+  width: 70px;
+  cursor: pointer;
+  position: relative;
+  left: 40px;
+}
+
+.navbar{
+  background: rgb(2,2,36);
+  background: linear-gradient(74deg, rgba(2,2,36,1) 0%, rgba(77,29,29,1) 9%, rgba(68,29,29,1) 30%, rgba(0,0,0,1) 100%, rgba(34,25,9,1) 100%);
+  width: 100%;
+  margin: auto;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0  50px;
+  position: relative;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Electrolize', sans-serif;
+
+}
+
+.navbar ul li::after{
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: #6dc97f;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.6s;
+}
+
+.navbar ul li:hover::after{
+    width: 110%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1{
+
+  font-size: 100px;
+  font-family: 'Electrolize', sans-serif;
+}
+
+.content p{
+  letter-spacing: 10px;
+  font-size: 40px;
+font-family: 'Bebas Neue', cursive;
+  margin: 100px, auto;
+  font-weight: 100;
+  line-height: 60px;
+  position: relative;
+  top: 10px;
+}
+
+.content p {
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from {letter-spacing: 0px;}
+  to {letter-spacing: 10px;}
+}
+
+.content h1 {
+  animation-name: second;
+  animation-duration: 2s;
+}
+
+@keyframes second {
+  from {font-size: 40px;}
+  to {font-size: 100px;}
+}
+
+button{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  top: 50px;
+  overflow: hidden;
+}
+
+span{
+  background: #009688;
+  height: 100%;
+  width: 0%;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+button:hover span{
+  width: 100%;
+}
+
+button:hover{
+  border: none;
+  background: #009688;
+  border-radius: 40px;
+}
+
+.Games{
+  background-color: black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.50)),url(hehe.gif);
+  width: 100%;
+  height: 500px;
+  background-color: #ffbb00;
+  text-align: center;
+}
+
+.Games h2{
+  font-size: 40px;
+font-family: 'Bad Script', cursive;
+color: white;
+position: static;
+margin: 20px;
+}
+
+.Games p{
+  font-size: 20px;
+font-family: 'Bad Script', cursive;
+color: white;
+}
+
+#images{
+}
+.programming{
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.90),rgba(0, 0, 0, 0.50)),url(programmer.gif);
+  background-size: cover;
+  background-position: center;
+}
+.programming h2{
+  font-size: 90px;
+  font-family: 'Electrolize', sans-serif;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 200px;
+}
+.programming p{
+  font-size: 20px;
+  font-family: 'Electrolize', sans-serif;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 250px;
+}
+
+.Gaming{
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.90),rgba(0, 0, 0, 0.50)),url(asdd.gif);
+  background-size: cover;
+  background-position: center;
+}
+.Gaming h2{
+  font-size: 90px;
+  font-family: 'Electrolize', sans-serif;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 200px;
+}
+.Gaming p{
+  font-size: 20px;
+  font-family: 'Electrolize', sans-serif;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 250px;
+}
+
+.learn{
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.90),rgba(0, 0, 0, 0.50)),url(hj.gif);
+  background-size: cover;
+  background-position: center;
+}
+
+.learn h2{
+  font-size: 60px;
+  font-family: 'Electrolize', sans-serif;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 100px;
+}
+.learn p{
+  font-size: 20px;
+  font-family: 'Electrolize', sans-serif;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 140px;
+}
+
+
+.Step2{
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.50)),url(hss.gif);
+  background-size: cover;
+  background-position: center;
+}
+
+.Step2 h2{
+  font-size: 60px;
+  font-family: 'Electrolize', sans-serif;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 200px;
+}
+
+.Step2 p{
+  font-size: 20px;
+  font-family: 'Electrolize', sans-serif;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 250px;
+}
+
+.Step3{
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.50)),url(sss.gif);
+  background-size: cover;
+  background-position: center;
+}
+
+.Step3 h2{
+  font-size: 60px;
+  font-family: 'Electrolize', sans-serif;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 200px;
+}
+
+.Step3 p{
+  font-size: 20px;
+  font-family: 'Electrolize', sans-serif;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 250px;
+}
+
+#hrr{
+  	height: 200%;
+}
+
+#kimage{
+  width: 200px;
+  position: relative;
+  left: 100px;
+}
+
+#limage{
+  width: 200px;
+  position: relative;
+  left: 1000px;
+}
+
+.analyse{
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.90),rgba(0, 0, 0, 0.50)),url(hjk.gif);
+  background-size: cover;
+  background-position: center;
+}
+.analyse h2{
+  font-size: 90px;
+  font-family: 'Electrolize', sans-serif;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 200px;
+}
+.analyse p{
+  font-size: 20px;
+  font-family: 'Electrolize', sans-serif;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 250px;
+}
+.understand{
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.90),rgba(0, 0, 0, 0.50)),url(fggh.gif);
+  background-size: cover;
+  background-position: center;
+}
+.understand h2{
+  font-size: 90px;
+  font-family: 'Electrolize', sans-serif;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 200px;
+}
+.understand p{
+  font-size: 20px;
+  font-family: 'Electrolize', sans-serif;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 250px;
+}
+.story{
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.90),rgba(0, 0, 0, 0.50)),url(kkkk.gif);
+  background-size: cover;
+  background-position: center;
+}
+.story h2{
+  font-size: 90px;
+  font-family: 'Electrolize', sans-serif;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 120px;
+}
+.story p{
+  font-size: 20px;
+  font-family: 'Electrolize', sans-serif;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 150px;
+}
+
+
+#btn1{
+  position: absolute;
+  left: 43%;
+  top: 290%;
+}
+
+.vimeo{
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.90),rgba(0, 0, 0, 0.50)),url(200.gif);
+  background-size: cover;
+  background-position: center;
+}
+
+#vimm{
+  position: relative;
+  left: 420px;
+}
+
+.container{
+  width: 100%;
+  height: 40px;
+  background: rgb(2,0,36);
+  background: linear-gradient(284deg, rgba(2,0,36,1) 9%, rgba(2,2,36,1) 11%, rgba(14,74,36,1) 100%, rgba(149,114,49,1) 100%);
+  background-size: cover;
+  background-position: center;
+}
+
+#first{
+  color: white;
+  text-align: right;
+  text-shadow: 2px;
+  text-decoration: none;
+  font-family: 'Electrolize', sans-serif;
+  position: relative;
+  left: 90%;
+  top: 10px;
+}
+
+#second{
+  color: white;
+  text-align: right;
+  text-shadow: 2px;
+  text-decoration: none;
+  font-family: 'Electrolize', sans-serif;
+  position: relative;
+  left: 77%;
+  top: 10px;
+}
+
+#third  {
+  color: white;
+  text-align: right;
+  text-shadow: 2px;
+  text-decoration: none;
+  font-family: 'Electrolize', sans-serif;
+  position: relative;
+  left: 78.5%;
+  top: 10px;
+}
+#four  {
+  color: white;
+  text-align: right;
+  text-shadow: 2px;
+  text-decoration: none;
+  font-family: 'Electrolize', sans-serif;
+  position: relative;
+  left: -3;
+  top: 10px;
+}
+
+.Itchio{
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.90),rgba(0, 0, 0, 0.50)),url(source.gif);
+  background-size: cover;
+  background-position: center;
+}
+
+.Itchio h2{
+  font-size: 90px;
+  font-family: 'Electrolize', sans-serif;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 50px;
+}
+.Itchio p{
+  font-size: 20px;
+  font-family: 'Electrolize', sans-serif;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 80px;
+}
+
+#jj {
+  position: relative;
+  left: 650px;
+  top: 100px;
+}
+
+.Step43{
+  width: 100%;
+  height: 720px;
+  background: rgb(0,0,0);
+  background: linear-gradient(74deg, rgba(0,0,0,1) 0%, rgba(7,16,56,1) 35%, rgba(89,8,8,1) 60%);  background-size: cover;
+  background-position: center;
+}
+
+.Step43 h2{
+  font-size: 90px;
+  font-family: 'Electrolize', sans-serif;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 120px;
+}
+.Step43 p{
+  font-size: 20px;
+  font-family: 'Electrolize', sans-serif;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 150px;
+}
+
+#vimb{
+  position: relative;
+  left: 430px;
+  top: 50px;
+}
+
+#why{
+  position: relative;
+  width: 400px;
+  left: 440px;
+  top: 50px;
+}
+
+#whya{
+  position: relative;
+  width: 400px;
+  left: -1030px;
+  top: 50px;
+}
